@@ -1,10 +1,5 @@
 # PortSwigger Web Security Academy — Web LLM Attacks
 
-![PortSwigger Web Security Academy](https://img.shields.io/badge/Platform-PortSwigger%20Web%20Security%20Academy-orange)
-![Level](https://img.shields.io/badge/Level-Practitioner-blue)
-![Progress](https://img.shields.io/badge/Learning%20Path-30%2F30%20Completed-brightgreen)
-![Focus](https://img.shields.io/badge/Focus-LLM%20Security%20%7C%20Prompt%20Injection-red)
-
 ## Overview
 
 Completed the **Web LLM Attacks** learning path on [PortSwigger Web Security Academy](https://portswigger.net/web-security/learning-paths/llm-attacks).
@@ -15,16 +10,16 @@ The learning path combines foundational concepts, vulnerability analysis, practi
 
 ### Completion Status
 
-| Attribute | Details |
-|---|---|
-| Platform | PortSwigger Web Security Academy |
-| Learning path | Web LLM Attacks |
-| Difficulty level | Practitioner |
-| Progress shown | 30/30 items completed |
-| Completion date | 21 October 2026 |
-| Primary focus | LLM application security |
-| Practical areas | Prompt injection, API abuse, AI-agent security, data exfiltration |
-| Evidence | Completion screenshot; individual lab screenshots to be added |
+| Attribute        | Details                                                           |
+| ---------------- | ----------------------------------------------------------------- |
+| Platform         | PortSwigger Web Security Academy                                  |
+| Learning path    | Web LLM Attacks                                                   |
+| Difficulty level | Practitioner                                                      |
+| Progress shown   | 30/30 items completed                                             |
+| Completion date  | 21 October 2026                                                   |
+| Primary focus    | LLM application security                                          |
+| Practical areas  | Prompt injection, API abuse, AI-agent security, data exfiltration |
+| Evidence         | Completion screenshot; individual lab screenshots to be added     |
 
 ## Learning Objectives
 
@@ -47,6 +42,7 @@ The main objectives of this learning path were to understand how LLM integration
 Studied the role of LLMs in web applications and how prompts influence model responses.
 
 **Concepts covered:**
+
 - LLM fundamentals and prompt processing.
 - Direct prompt injection.
 - Common LLM vulnerability patterns.
@@ -58,6 +54,7 @@ Studied the role of LLMs in web applications and how prompts influence model res
 Explored how an LLM can interact with application functionality through API integrations and tool calls.
 
 **Concepts covered:**
+
 - How LLM API integrations work.
 - Function calling and plugin-based workflows.
 - Mapping the LLM API attack surface.
@@ -72,6 +69,7 @@ Explored how an LLM can interact with application functionality through API inte
 Studied how instructions embedded in external content can influence an LLM when the model retrieves or processes that content.
 
 **Concepts covered:**
+
 - Direct versus indirect prompt injection.
 - Attacker-controlled web content.
 - Trust boundaries between instructions and retrieved data.
@@ -85,6 +83,7 @@ Studied how instructions embedded in external content can influence an LLM when 
 Explored the risk of sensitive information being exposed through model responses.
 
 **Concepts covered:**
+
 - Sensitive information leakage.
 - Data exposure through prompts and generated responses.
 - Risks associated with poorly sanitized training data.
@@ -97,6 +96,7 @@ Explored the risk of sensitive information being exposed through model responses
 Reviewed security practices for applications that expose APIs and sensitive data to LLMs.
 
 **Concepts covered:**
+
 - Treating LLM-accessible APIs as externally reachable attack surfaces.
 - Enforcing authentication and authorization at the application layer.
 - Minimizing sensitive information supplied to models.
@@ -110,6 +110,7 @@ Reviewed security practices for applications that expose APIs and sensitive data
 Investigated how an AI-powered web application scanner can be influenced by attacker-controlled content discovered during a scan.
 
 **Concepts covered:**
+
 - Architecture of AI-powered web application scanners.
 - Traditional scanners versus AI-powered scanners.
 - Indirect prompt injection through website content.
@@ -118,6 +119,7 @@ Investigated how an AI-powered web application scanner can be influenced by atta
 - Risks of unintended actions by an AI agent.
 
 **Practical lab completed:**
+
 - Exploiting AI agents to perform destructive actions — Apprentice.
 
 **Security takeaway:** Automated security agents need restricted permissions, validated tool calls, and safeguards against instructions embedded in untrusted pages.
@@ -127,6 +129,7 @@ Investigated how an AI-powered web application scanner can be influenced by atta
 Studied how an AI scanner with access to sensitive information may be manipulated into disclosing that information.
 
 **Concepts covered:**
+
 - Sensitive-data exposure through agent workflows.
 - Indirect prompt injection in scanner-accessible content.
 - API authorization weaknesses.
@@ -134,6 +137,7 @@ Studied how an AI scanner with access to sensitive information may be manipulate
 - Risks of allowing agents to publish or transmit retrieved data.
 
 **Practical lab completed:**
+
 - Exploiting AI agents to exfiltrate sensitive information — Apprentice.
 
 **Security takeaway:** AI agents should not have unrestricted access to secrets or permission to publish retrieved sensitive data. Tool access, data access, and output destinations must all be restricted.
@@ -143,6 +147,7 @@ Studied how an AI scanner with access to sensitive information may be manipulate
 Explored the relationship between LLM-driven requests and server-side request forgery (SSRF).
 
 **Concepts covered:**
+
 - Routing-based SSRF concepts.
 - LLM-generated requests to application endpoints.
 - Risks of accessing internal systems through automated agents.
@@ -156,6 +161,7 @@ Explored the relationship between LLM-driven requests and server-side request fo
 Reviewed defensive design principles for AI-powered scanners and other agentic security tools.
 
 **Concepts covered:**
+
 - Least-privilege tool permissions.
 - Server-side access-control enforcement.
 - Separation of trusted instructions from untrusted content.
@@ -168,37 +174,41 @@ Reviewed defensive design principles for AI-powered scanners and other agentic s
 
 The following labs are listed in the official Web LLM Attacks learning path. The two Apprentice labs below were completed as part of my practical work.
 
-| Lab | Level | Status |
-|---|---|---|
-| Exploiting LLM APIs with excessive agency | Apprentice | To document |
-| Exploiting vulnerabilities in LLM APIs | Practitioner | To document |
-| Indirect prompt injection | Practitioner | To document |
-| Exploiting AI agents to perform destructive actions | Apprentice | Completed |
-| Exploiting AI agents to exfiltrate sensitive information | Apprentice | Completed |
+| Lab                                                               | Level        | Status      |
+| ----------------------------------------------------------------- | ------------ | ----------- |
+| Exploiting LLM APIs with excessive agency                         | Apprentice   | To document |
+| Exploiting vulnerabilities in LLM APIs                            | Practitioner | To document |
+| Indirect prompt injection                                         | Practitioner | To document |
+| Exploiting AI agents to perform destructive actions               | Apprentice   | Completed   |
+| Exploiting AI agents to exfiltrate sensitive information          | Apprentice   | Completed   |
 | Bypassing AI scanner defenses to exfiltrate sensitive information | Practitioner | To document |
-| Exploiting AI agents to trigger secondary vulnerabilities | Practitioner | To document |
+| Exploiting AI agents to trigger secondary vulnerabilities         | Practitioner | To document |
 
-*Note: The overall learning path is complete at 30/30 items. The table above highlights practical labs from the path; individual statuses should be updated only after verifying each lab's completion.*
+_Note: The overall learning path is complete at 30/30 items. The table above highlights practical labs from the path; individual statuses should be updated only after verifying each lab's completion._
 
 ## Practical Skills Developed
 
 ### LLM Application Security
+
 - Identify direct and indirect prompt-injection vectors.
 - Analyze the trust boundaries between prompts, retrieved content, and tool outputs.
 - Assess how application functionality exposed to an LLM can be abused.
 
 ### API and Access-Control Testing
+
 - Investigate insecure direct object reference (IDOR) and broken access-control scenarios.
 - Understand the importance of object-level authorization.
 - Evaluate the consequences of excessive permissions in AI-integrated applications.
 
 ### AI-Agent Security
+
 - Analyze how untrusted content may influence agent decisions.
 - Understand the risks associated with autonomous tool invocation.
 - Assess unintended destructive actions and sensitive-data disclosure.
 - Identify safeguards for tool permissions and sensitive operations.
 
 ### Security Analysis and Reporting
+
 - Interpret scanner findings and tool-call logs.
 - Distinguish vulnerability identification from demonstrated exploitation.
 - Document attack conditions, impact, and mitigations.
